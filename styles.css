@@ -1,0 +1,48 @@
+/* styles.css - styling untuk HARSHA INTERIOR */
+:root{
+  --bg:#f9fafb;
+  --text:#111827;
+  --primary:#2563eb;
+  --header:#111827;
+  --muted:#9ca3af;
+}
+*{box-sizing:border-box}
+body{
+  font-family: Arial, sans-serif;
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+.header{
+  background:var(--header);
+  color:#fff;
+  padding:1rem 2rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.brand{display:flex;align-items:center;gap:0.75rem}
+.brand img{height:52px;width:auto;display:block;border-radius:6px}
+.brand h1{margin:0;font-size:1.25rem;letter-spacing:0.4px}
+nav a{margin:0 0.75rem;color:#d1d5db;text-decoration:none;font-weight:600}
+nav a:hover{color:#fff}
+.hero{background:linear-gradient(to right,#3b82f6,#2563eb);color:#fff;text-align:center;padding:5rem 2rem}
+.btn{background:#fff;color:var(--primary);padding:0.75rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block}
+.section{padding:3rem 2rem;text-align:center}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:2rem}
+.card{background:#fff;padding:1rem;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+.card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-top:2rem}
+.testimonial{background:#fff;padding:1.25rem;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);font-style:italic}
+.contact{background:#f3f4f6;padding:3rem 2rem;text-align:center}
+.contact a{display:inline-block;margin-top:1rem;background:var(--primary);color:#fff;padding:0.75rem 1.25rem;border-radius:8px;text-decoration:none}
+footer{background:var(--header);color:var(--muted);text-align:center;padding:1.25rem;margin-top:2rem}
+@media(max-width:700px){
+  nav{display:none}
+  .brand h1{font-size:1rem}
+  .hero{padding:3rem 1rem}
+}
